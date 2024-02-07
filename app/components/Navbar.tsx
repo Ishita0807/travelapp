@@ -10,20 +10,13 @@ import React from 'react'
       <Link href="/">
         <Image src="/hilink-logo.svg" alt="logo" width={74} height={29}/>
         <ul className='hidden gap-12 h-full lg:flex'>
-          {NAV_LINKS.map((link) => (
-            <li key={link.key} className='regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold '>
-              <Link href={link.href} >
-                {link.label }
+          {NAV_LINKS.map((link, index) => (
+              <Link href={link.href} key={link.key} className='flex regular-16 flexCenter cursor-pointer pb-1.5 text-gray-500'>
+              {link.label}
               </Link>
-
-            </li>
-            
           ))}
         </ul>
-
       </Link>
-      
-
     </nav>
   )
 }
