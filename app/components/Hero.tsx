@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Camp = () => {
+const Hero = () => {
   return (
-    <div> Camp</div>
+    <div>Hero</div>
   )
 }
 
-export default Camp
+export default Hero
